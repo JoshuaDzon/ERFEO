@@ -1,0 +1,243 @@
+@media (max-width: 400px) {
+    /* Main Layout Adjustments - Fixed positioning */
+    body {
+        padding-bottom: 70px !important;
+    }
+
+    .ml-\[264px\] {
+        margin-left: 0 !important;
+        padding: 15px !important;
+        width: 100% !important;
+    }
+
+    /* Page Header - Moved down */
+    .page-header {
+        padding: 20px 15px !important;
+        margin-top: 60px !important; /* Increased from 40px */
+        border-radius: 15px !important;
+        position: relative;
+        top: 10px;
+    }
+
+    .page-header h2 {
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
+
+    .page-header p {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+
+    /* Booking Table Container - Added spacing from top */
+    .booking-table {
+        border-radius: 15px !important;
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+    }
+
+    /* Table Header */
+    .table-header {
+        padding: 15px !important;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .table-header span:first-child {
+        font-size: 1rem !important;
+    }
+
+    .status-badge {
+        padding: 8px 15px !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Information Section - Added bottom spacing */
+    .info-section {
+        padding: 20px 15px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .section-title {
+        font-size: 0.9rem !important;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .info-item {
+        padding: 15px !important;
+        text-align: center;
+        margin-bottom: 5px !important;
+    }
+
+    .info-label {
+        font-size: 0.8rem !important;
+    }
+
+    .info-value {
+        font-size: 1rem !important;
+    }
+
+    /* Event Specific Details - Full width on mobile */
+    .info-item.md\:col-span-3 {
+        grid-column: 1 !important;
+        margin-top: 5px !important;
+    }
+
+    /* Booking Details Section - Adjusted spacing */
+    .booking-details {
+        padding: 20px 15px !important;
+        margin-top: 5px !important;
+    }
+
+    .details-grid {
+        gap: 15px !important;
+    }
+
+    .detail-item {
+        padding: 15px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .detail-label {
+        font-size: 0.8rem !important;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+
+    .detail-value {
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+
+    /* Total Cost Styling */
+    .detail-value.text-\[2\.2rem\] {
+        font-size: 1.8rem !important;
+        padding: 15px !important;
+        margin-top: 10px !important;
+    }
+
+    /* Menu, Decorations, Sound Items */
+    .detail-value .menu-item,
+    .detail-value .decoration-item,
+    .detail-value .sound-item,
+    .detail-value .attendee-category,
+    .detail-value .event-detail-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 10px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Empty State - Moved down */
+    .empty-state {
+        padding: 40px 20px !important;
+        border-radius: 15px !important;
+        margin-top: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .empty-state h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .empty-state p {
+        font-size: 1rem !important;
+    }
+
+    .empty-state::before {
+        font-size: 3rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Hide decorative elements on mobile */
+    .page-header::before,
+    .page-header::after {
+        display: none;
+    }
+
+    /* Adjust hover effects for touch devices */
+    .booking-table:hover {
+        transform: none !important;
+    }
+
+    .info-item:hover,
+    .detail-item:hover {
+        transform: none !important;
+    }
+
+    /* Improve touch targets */
+    .info-item,
+    .detail-item {
+        min-height: auto;
+        cursor: default;
+    }
+
+    /* Better text wrapping */
+    .info-value,
+    .detail-value {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Adjust JSON data display */
+    .detail-value br {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Custom scrollbar adjustments */
+    .booking-details::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* Footer adjustments - Ensure it stays at bottom */
+    footer {
+        padding: 15px !important;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Additional spacing for better visual hierarchy */
+    .booking-table:first-child {
+        margin-top: 15px !important;
+    }
+
+    /* Adjust the main content container to push everything down */
+    .p-10 {
+        padding: 20px 15px !important;
+    }
+
+    /* Ensure proper spacing between sections */
+    .info-section + .booking-details {
+        margin-top: 10px !important;
+    }
+}
+
+/* Ensure sidebar doesn't interfere with mobile layout */
+@media (max-width: 400px) {
+    .pc-sidebar.pc-sidebar-hide ~ .ml-\[264px\] {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* Main Footer Styles */
+.pc-footer {
+    color: #000000;
+    padding: 25px 0;
+    font-size: 10px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}

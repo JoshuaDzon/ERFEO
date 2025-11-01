@@ -1,0 +1,143 @@
+@media (max-width: 400px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0 5px;
+    overflow-x: hidden;
+    background-attachment: scroll;
+    font-size: 0.8rem;
+  }
+
+  header, nav, main, footer, section, div {
+    width: 100%;
+  }
+
+  .pc-sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .pc-sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .m-header img {
+    width: 40px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1100;
+    background: #BF9374;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+
+  .profile-header {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .profile-header p {
+    font-size: 0.75rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 0.8rem !important;
+  }
+
+  .stat-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-card,
+  .bookings-section {
+    padding: 12px !important;
+  }
+
+  .profile-card h2 {
+    font-size: 1rem;
+  }
+
+  .booking-card {
+    padding: 10px !important;
+    font-size: 0.75rem;
+  }
+
+  .booking-card .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .info-grid-item {
+    padding: 8px;
+  }
+
+  .modal-content {
+    width: 90% !important;
+    padding: 18px !important;
+    font-size: 0.75rem;
+  }
+
+  .modal-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content input,
+  .modal-content button {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: linear-gradient(to right, #BF9374, #a67c5d);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 0.7rem;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 0.65rem;
+  }
+}

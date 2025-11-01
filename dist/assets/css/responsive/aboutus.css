@@ -1,0 +1,125 @@
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-attachment: scroll;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px !important;
+  }
+
+  nav img {
+    height: 35px !important;
+    width: 35px !important;
+  }
+
+  nav ul {
+    flex-direction: row !important;
+    gap: 10px !important;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 13px !important;
+  }
+
+  .card-animation {
+    padding: 20px !important;
+  }
+
+  .page-header-title h5 {
+    font-size: 1.6rem !important;
+  }
+
+  .bg-white.p-\[40px\] {
+    padding: 20px !important;
+  }
+
+  .text-center h2,
+  .text-center h5 {
+    font-size: 1.3rem !important;
+    line-height: 1.6rem !important;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .info-box {
+    padding: 20px !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  table {
+    font-size: 0.85rem !important;
+  }
+
+  table td {
+    padding: 12px 10px !important;
+  }
+
+  .bg-gradient-to-br {
+    padding: 20px !important;
+  }
+
+  footer {
+    text-align: center !important;
+    padding: 15px 10px !important;
+  }
+
+  footer p {
+    font-size: 0.75rem !important;
+    line-height: 1.2rem !important;
+  }
+
+  .modal-content {
+    width: 95% !important;
+    max-width: 360px !important;
+    padding: 25px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .modal-content h4 {
+    font-size: 1.3rem !important;
+  }
+
+  .modal-content input,
+  .modal-content textarea {
+    font-size: 0.9rem !important;
+    padding: 10px 12px !important;
+  }
+
+  .modal-btn {
+    font-size: 0.9rem !important;
+    padding: 10px !important;
+  }
+
+  .close-btn {
+    font-size: 1.5rem !important;
+    top: 10px !important;
+    right: 15px !important;
+  }
+
+  #accountDropdown {
+    right: 10px !important;
+    min-width: 100px !important;
+  }
+
+  #accountDropdown a {
+    font-size: 0.8rem !important;
+    padding: 8px 10px !important;
+  }
+}

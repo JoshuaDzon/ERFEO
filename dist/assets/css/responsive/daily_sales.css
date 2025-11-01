@@ -1,0 +1,463 @@
+@media (max-width: 400px) {
+    /* === MAIN LAYOUT ADJUSTMENTS === */
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+        font-size: 14px !important;
+    }
+
+    .pc-container {
+        margin-left: 0 !important;
+        padding: 10px 8px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: calc(100vh - 60px) !important;
+    }
+
+    /* === HEADER SECTION === */
+    .page-header {
+        padding: 15px 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .page-header h1 {
+        font-size: 1.3rem !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+    }
+
+    .page-header p {
+        font-size: 0.8rem !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* === SUMMARY CARDS - STACK VERTICALLY === */
+    .summary-section {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .summary-card {
+        padding: 15px 12px !important;
+        border-radius: 10px !important;
+        text-align: center !important;
+        min-height: 100px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .summary-card span {
+        font-size: 0.7rem !important;
+        margin-bottom: 4px !important;
+        display: block !important;
+    }
+
+    .summary-card h3 {
+        font-size: 1.3rem !important;
+        margin: 6px 0 !important;
+        font-weight: 700 !important;
+    }
+
+    .summary-card p {
+        font-size: 0.75rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .summary-card .flex {
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 5px !important;
+    }
+
+    .growth-indicator {
+        font-size: 0.65rem !important;
+        padding: 3px 8px !important;
+        border-radius: 12px !important;
+    }
+
+    /* === CHARTS SECTION - FULL WIDTH === */
+    .charts-section {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .chart-panel {
+        padding: 12px !important;
+        border-radius: 10px !important;
+        min-height: 200px !important;
+        width: 100% !important;
+    }
+
+    .chart-panel h3 {
+        font-size: 0.85rem !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+        font-weight: 600 !important;
+    }
+
+    .chart-container {
+        height: 150px !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /* === BOTTOM SECTION - COMPACT VERTICAL STACK === */
+    .bottom-section {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+
+    .recent-orders,
+    .stats-panel {
+        padding: 10px !important;
+        border-radius: 8px !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .recent-orders h3,
+    .stats-panel h3 {
+        font-size: 0.8rem !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+        padding-bottom: 6px !important;
+        border-bottom: 1px solid #e5e7eb !important;
+    }
+
+    /* === RECENT ORDERS - COMPACT TABLE === */
+    .recent-orders .overflow-x-auto {
+        max-height: 220px !important;
+        border: 1px solid #e5e7eb !important;
+        border-radius: 6px !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .recent-orders table {
+        min-width: 380px !important;
+        width: 100% !important;
+        font-size: 0.7rem !important;
+    }
+
+    .recent-orders th {
+        padding: 6px 4px !important;
+        font-size: 0.65rem !important;
+        font-weight: 600 !important;
+        background: #f8f9fa !important;
+        white-space: nowrap !important;
+    }
+
+    .recent-orders td {
+        padding: 6px 4px !important;
+        font-size: 0.7rem !important;
+        border-bottom: 1px solid #f1f1f1 !important;
+    }
+
+    /* Compact column widths */
+    .recent-orders th:nth-child(1),
+    .recent-orders td:nth-child(1) {
+        width: 60px !important;
+        text-align: center !important;
+    }
+
+    .recent-orders th:nth-child(2),
+    .recent-orders td:nth-child(2) {
+        width: 90px !important;
+    }
+
+    .recent-orders th:nth-child(3),
+    .recent-orders td:nth-child(3) {
+        width: 70px !important;
+        text-align: right !important;
+    }
+
+    .recent-orders th:nth-child(4),
+    .recent-orders td:nth-child(4) {
+        width: 80px !important;
+        font-size: 0.65rem !important;
+    }
+
+    .recent-orders th:nth-child(5),
+    .recent-orders td:nth-child(5) {
+        width: 60px !important;
+        text-align: center !important;
+    }
+
+    /* === QUICK STATS - COMPACT LAYOUT === */
+    .stats-panel {
+        max-height: 180px !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .stats-panel .space-y-3 {
+        gap: 8px !important;
+    }
+
+    .stats-panel .flex {
+        padding: 8px !important;
+        border-radius: 6px !important;
+        align-items: center !important;
+        gap: 8px !important;
+        min-height: 50px !important;
+    }
+
+    .stats-panel .flex > div {
+        flex: 1 !important;
+    }
+
+    .stats-panel p.text-xs {
+        font-size: 0.65rem !important;
+        margin-bottom: 1px !important;
+        font-weight: 500 !important;
+    }
+
+    .stats-panel p.text-lg {
+        font-size: 0.9rem !important;
+        margin-top: 1px !important;
+        font-weight: 700 !important;
+    }
+
+    .stats-panel i {
+        font-size: 1rem !important;
+        width: 32px !important;
+        height: 32px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 6px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* === STATUS BADGES - SMALLER === */
+    .inline-flex.items-center.px-2.py-0.5 {
+        padding: 2px 6px !important;
+        font-size: 0.6rem !important;
+        border-radius: 6px !important;
+        font-weight: 600 !important;
+    }
+
+    /* === EMPTY STATE - COMPACT === */
+    .recent-orders td.text-center {
+        padding: 15px 10px !important;
+        font-size: 0.75rem !important;
+    }
+
+    .recent-orders .fa-inbox {
+        font-size: 1.5rem !important;
+        margin-bottom: 6px !important;
+        opacity: 0.5 !important;
+    }
+
+    /* === TEXT TRUNCATION === */
+    .recent-orders td {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 80px !important;
+    }
+
+    /* === CHART.JS RESPONSIVE === */
+    canvas {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .chartjs-size-monitor {
+        display: none !important;
+    }
+
+    /* === TOUCH IMPROVEMENTS === */
+    .summary-card,
+    .chart-panel,
+    .recent-orders,
+    .stats-panel {
+        cursor: default !important;
+        touch-action: manipulation !important;
+    }
+
+    /* Remove hover effects for mobile */
+    .summary-card:hover,
+    .chart-panel:hover,
+    .stats-panel .flex:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    /* === SCROLLBAR STYLING === */
+    .overflow-x-auto::-webkit-scrollbar {
+        height: 4px !important;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-track {
+        background: #f1f1f1 !important;
+        border-radius: 2px !important;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+        background: #BF9374 !important;
+        border-radius: 2px !important;
+    }
+
+    .stats-panel::-webkit-scrollbar {
+        width: 4px !important;
+    }
+
+    .stats-panel::-webkit-scrollbar-track {
+        background: #f1f1f1 !important;
+        border-radius: 2px !important;
+    }
+
+    .stats-panel::-webkit-scrollbar-thumb {
+        background: #BF9374 !important;
+        border-radius: 2px !important;
+    }
+
+    /* === LOADING STATES === */
+    .skeleton-loader {
+        height: 100px !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+/* === EXTRA SMALL SCREENS (320px and below) === */
+@media (max-width: 320px) {
+    .pc-container {
+        padding: 8px 6px !important;
+    }
+
+    .summary-card {
+        padding: 12px 10px !important;
+        min-height: 90px !important;
+    }
+
+    .summary-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .chart-panel {
+        padding: 10px !important;
+        min-height: 180px !important;
+    }
+
+    .chart-container {
+        height: 140px !important;
+    }
+
+    .recent-orders,
+    .stats-panel {
+        padding: 8px !important;
+    }
+
+    .recent-orders table {
+        min-width: 350px !important;
+    }
+
+    .recent-orders th {
+        padding: 5px 3px !important;
+        font-size: 0.6rem !important;
+    }
+
+    .recent-orders td {
+        padding: 5px 3px !important;
+        font-size: 0.65rem !important;
+    }
+
+    /* Extra compact columns for very small screens */
+    .recent-orders th:nth-child(1),
+    .recent-orders td:nth-child(1) {
+        width: 50px !important;
+    }
+
+    .recent-orders th:nth-child(2),
+    .recent-orders td:nth-child(2) {
+        width: 80px !important;
+    }
+
+    .recent-orders th:nth-child(3),
+    .recent-orders td:nth-child(3) {
+        width: 60px !important;
+    }
+
+    .recent-orders th:nth-child(4),
+    .recent-orders td:nth-child(4) {
+        width: 70px !important;
+    }
+
+    .recent-orders th:nth-child(5),
+    .recent-orders td:nth-child(5) {
+        width: 50px !important;
+    }
+
+    .stats-panel .flex {
+        padding: 6px !important;
+        min-height: 45px !important;
+    }
+
+    .stats-panel i {
+        font-size: 0.9rem !important;
+        width: 28px !important;
+        height: 28px !important;
+    }
+}
+
+/* === SIDEBAR COMPATIBILITY === */
+@media (max-width: 400px) {
+    .pc-sidebar.pc-sidebar-hide ~ .main-content .pc-container {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print and (max-width: 400px) {
+    .summary-section,
+    .charts-section,
+    .bottom-section {
+        grid-template-columns: 1fr !important;
+        break-inside: avoid !important;
+    }
+
+    .recent-orders .overflow-x-auto {
+        overflow-x: visible !important;
+    }
+}
+
+/* === SMOOTH SCROLLING ENHANCEMENTS === */
+@media (max-width: 400px) {
+    .recent-orders .overflow-x-auto,
+    .stats-panel {
+        scrollbar-width: thin !important;
+        scroll-behavior: smooth !important;
+    }
+    
+    /* Prevent horizontal page scroll */
+    body {
+        position: relative !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+@media (max-width: 400px) {
+    .summary-card,
+    .chart-panel,
+    .recent-orders,
+    .stats-panel {
+        will-change: transform !important;
+        backface-visibility: hidden !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
+}

@@ -1,0 +1,141 @@
+/* =========================================
+   RESPONSIVE STYLES – INBOX PAGE (max-width: 400px)
+   ========================================= */
+@media (max-width: 400px) {
+  /* GENERAL */
+  body {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-attachment: scroll;
+  }
+
+  .main-content {
+    padding: 10px !important;
+  }
+
+  /* NAVBAR */
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 15px !important;
+  }
+
+  nav img {
+    height: 35px !important;
+    width: 35px !important;
+  }
+
+  nav ul {
+    flex-direction: row !important;
+    gap: 10px !important;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 13px !important;
+  }
+
+  #accountDropdown {
+    right: 10px !important;
+    min-width: 110px !important;
+  }
+
+  #accountDropdown a {
+    font-size: 0.8rem !important;
+    padding: 8px 10px !important;
+  }
+
+  /* HEADER / TITLE SECTION */
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .unread-count {
+    font-size: 0.8rem !important;
+    padding: 6px 10px !important;
+  }
+
+  /* FILTER BUTTONS */
+  .filter-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 5px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .flex.gap-\[10px\] {
+    flex-wrap: wrap !important;
+  }
+
+  /* MESSAGE ITEMS */
+  .message-item {
+    padding: 15px !important;
+  }
+
+  .message-item span.text-\[1\.1rem\] {
+    font-size: 1rem !important;
+  }
+
+  .booking-badge {
+    padding: 5px 10px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .message-item .text-\[0\.95rem\] {
+    font-size: 0.9rem !important;
+  }
+
+  .event-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .event-info span {
+    font-size: 0.8rem !important;
+    padding: 6px 8px !important;
+  }
+
+  .timestamp {
+    display: block !important;
+    text-align: right !important;
+    margin-top: 5px !important;
+  }
+
+  /* EMPTY INBOX */
+  .empty-inbox {
+    padding: 40px 15px !important;
+  }
+
+  .empty-inbox h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .empty-inbox p {
+    font-size: 0.9rem !important;
+  }
+
+  .empty-inbox-icon {
+    font-size: 3.5rem !important;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center !important;
+    padding: 15px 10px !important;
+  }
+
+  footer p {
+    font-size: 0.75rem !important;
+    line-height: 1.2rem !important;
+  }
+}
