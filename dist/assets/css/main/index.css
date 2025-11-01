@@ -1,0 +1,33 @@
+body {
+    background-image: url("../../images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-content h1 {
+    font-family: "Libre Baskerville";
+    text-shadow: 2px 2px 2px #555555;
+}
+.hero-content p {
+    font-family: "Montserrat, Poppins";
+    text-shadow: 2px 2px 2px #555555;
+}
+@keyframes fadeOpacity {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+.modal-backdrop.show {
+    display: flex !important;
+    animation: fadeOpacity 0.3s ease forwards;
+}
+.modal-backdrop.show .modal-content {
+    animation: fadeOpacity 0.3s ease forwards;
+}
+::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    min-height: 100vh;
+}
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}  
+.loading {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-size: 1000px 100%;
+}
+.header-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+.header-card::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(135deg, #BF9374 0%, #D4A574 100%);
+}
+.users-table-container h3::before {
+    content: '';
+    width: 4px;
+    height: 28px;
+    background: linear-gradient(135deg, #BF9374 0%, #D4A574 100%);
+    border-radius: 2px;
+}
+.username::before {
+    content: '👤';
+    font-size: 1.2rem;
+}
+.no-data::before {
+    content: '📋';
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+.users-table-container::-webkit-scrollbar {
+    height: 8px;
+}
+.users-table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.users-table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #BF9374 0%, #D4A574 100%);
+    border-radius: 10px;
+}
+.users-table-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #A87D5F 0%, #C39564 100%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.pc-sidebar.pc-sidebar-hide ~ .ml-\[260px\] {
+    margin-left: 0px;
+    width: calc(1600px - 60px);
+    transition: all 0.3s ease;
+}
+
+.pc-footer p {
+    font-size: 14px;
+    text-align: left;
+
+}

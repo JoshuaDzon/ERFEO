@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    min-height: 100vh;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.booking-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+.section-title::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(135deg, #BF9374 0%, #D4A574 100%);
+    border-radius: 2px;
+}
+.cost-highlight {
+    background: linear-gradient(135deg, #BF9374 0%, #D4A574 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.empty-state-icon::before {
+    content: '📋';
+    display: block;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.pc-sidebar.pc-sidebar-hide ~ .ml-\[264px\] {
+    margin-left: 80px;
+    max-width: calc(1470px - 80px);
+    transition: all 0.3s ease;
+}
+
+.pc-sidebar.pc-sidebar-hide ~ main.main-content {
+    margin-left: -50px;
+    width: 1650px;
+    transition: all 0.3s ease;
+}
+.main-content {
+    transition: all 0.3s ease;
+}
+.pc-sidebar.pc-sidebar-hide ~ main.main-content .content-section {
+    width: 100%;
+}
+.pc-sidebar.pc-sidebar-hide ~ main.main-content .confirm-phase-btn {
+    margin-left: 520px;
+}
+.pc-header {
+    left: 265px;
+    width: calc(100% - 260px);
+    transition: left 0.3s ease, width 0.3s ease;
+}
+.pc-header.sidebar-collapsed {
+    left: 0;
+    width: 100%;
+}
+.pc-container {
+    margin-left: 260px;
+    transition: margin-left 0.3s ease;
+}
+.pc-container.sidebar-collapsed {
+    margin-left: 0;
+}
